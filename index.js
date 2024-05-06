@@ -1,3 +1,4 @@
+require("events").EventEmitter.defaultMaxListeners = 15;
 const jsonServer = require("json-server");
 const server = jsonServer.create();
 const router = jsonServer.router("db.json");
